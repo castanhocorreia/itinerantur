@@ -15,26 +15,28 @@ import java.util.Optional;
 @NoArgsConstructor
 @Setter
 public class Traveler {
-    LocalDate birthdate;
-    @OneToMany
-    List<Medal> medals = new ArrayList<>();
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String avatar;
-    String email;
-    String password;
-    String username;
+  LocalDate birthdate;
+  @OneToMany List<Medal> medals = new ArrayList<>();
 
-    public Traveler(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  Long id;
 
-    public void decorate(Medal decoration) {
-        Optional<Medal> duplication = medals.stream().filter(medal -> medal.equals(decoration)).findAny();
-        if (!duplication.isPresent()) {
-            medals.add(decoration);
-        }
+  String avatar;
+  String email;
+  String password;
+  String username;
+
+  public Traveler(String username, String password) {
+    this.username = username;
+    this.password = password;
+  }
+
+  public void decorate(Medal decoration) {
+    Optional<Medal> duplication =
+        medals.stream().filter(medal -> medal.equals(decoration)).findAny();
+    if (!duplication.isPresent()) {
+      medals.add(decoration);
     }
+  }
 }

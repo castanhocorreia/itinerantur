@@ -1,4 +1,4 @@
-package com.itinerantur.travel.model;
+package com.itinerantur.travel.medal;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,10 +24,10 @@ public class Medal {
   String name;
 
   @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    Medal medal = (Medal) o;
+  public boolean equals(Object object) {
+    if (this == object) return true;
+    if (object == null || getClass() != object.getClass()) return false;
+    Medal medal = (Medal) object;
     return Objects.equals(id, medal.id);
   }
 

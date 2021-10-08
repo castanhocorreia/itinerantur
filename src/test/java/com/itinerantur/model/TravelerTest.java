@@ -1,5 +1,6 @@
 package com.itinerantur.travel.model;
 
+import com.itinerantur.travel.medal.Medal;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

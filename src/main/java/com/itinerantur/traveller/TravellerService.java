@@ -1,3 +1,3 @@
-package com.itinerantur.travel.traveller;
+package com.itinerantur.traveller;
 
 public class TravellerService {}

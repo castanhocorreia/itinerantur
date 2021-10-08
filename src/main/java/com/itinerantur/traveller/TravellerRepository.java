@@ -1,4 +1,4 @@
-package com.itinerantur.travel.traveller;
+package com.itinerantur.traveller;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

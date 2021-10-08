@@ -1,4 +1,4 @@
-package com.itinerantur.travel;
+package com.itinerantur;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

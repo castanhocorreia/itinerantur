@@ -5,10 +5,14 @@ import lombok.Getter;
 import java.time.LocalDate;
 
 @Getter
-public class TravellerRegister {
-  LocalDate birthdate;
-  String birthPlace;
-  String email;
-  String name;
-  String password;
+public class TravellerRegistration {
+  private LocalDate birthdate;
+  private String birthPlace;
+  private String email;
+  private String name;
+  private String password;
+
+  public Traveller convert() {
+    return new Traveller();
+  }
 }

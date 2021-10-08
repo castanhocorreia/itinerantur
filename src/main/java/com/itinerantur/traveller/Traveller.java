@@ -1,4 +1,4 @@
-package com.itinerantur.travel.traveller;
+package com.itinerantur.traveller;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,14 +15,13 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Setter
 public class Traveller {
-  LocalDate birthdate;
+  private LocalDate birthdate;
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  Long id;
+  private Long id;
 
-  String avatar;
-  String email;
-  String name;
-  String password;
+  private String email;
+  private String name;
+  private String password;
 }

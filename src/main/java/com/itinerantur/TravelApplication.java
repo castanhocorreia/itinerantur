@@ -1,4 +1,4 @@
-package com.itinerantur.travel;
+package com.itinerantur;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

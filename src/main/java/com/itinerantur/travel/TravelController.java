@@ -1,2 +1,3 @@
-package com.itinerantur.travel;public class TravelController {
-}
+package com.itinerantur.travel;
+
+public class TravelController {}

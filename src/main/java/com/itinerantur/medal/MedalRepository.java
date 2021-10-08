@@ -1,4 +1,4 @@
-package com.itinerantur.travel.medal;
+package com.itinerantur.medal;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

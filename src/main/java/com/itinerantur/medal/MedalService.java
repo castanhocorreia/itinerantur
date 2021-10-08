@@ -1,3 +1,3 @@
-package com.itinerantur.travel.medal;
+package com.itinerantur.medal;
 
 public class MedalService {}

@@ -1,4 +1,4 @@
-package com.itinerantur.travel.medal;
+package com.itinerantur.medal;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,11 +17,11 @@ import java.util.Objects;
 public class Medal {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  Long id;
+  private Long id;
 
-  String description;
-  String icon;
-  String name;
+  private String description;
+  private String icon;
+  private String name;
 
   @Override
   public boolean equals(Object object) {
